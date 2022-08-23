@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTravel - nachhaltiger Reisen</title>
+    <script src="https://kit.fontawesome.com/e996627177.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css"> <!-- "../" means to go up one folder -->
+</head>
+<body>
+    <nav class="navigation">
+      <i class="fa-solid fa-leaf fa-lg"><span class="logotxt"><b>Eco</b>Travel</span></i>
+    <ul class="navlist">
+        <a href="#home"><li>Home</li></a>
+        <a href="#destination"><li>Destinations</li></a>
+        <a href="#book"><li>Book</li></a>
+        <a href="#footer"><li>Contact</li></a>
+    </ul>
+    </nav>  
+    <section class="mainSection" id="home">
+        <div class="midContainer">
+            <h1 class="title">Start eco-friendly traveling today</h1>
+            <p class="description">Full-service agency for eco-friendly <br> traveling in northern Europe.</p> 
+            <div class="button1Container"><button class="button1" id="button1">Book your vacation now</button></div>
+        </div>
+        <div class="midContainer2">
+            <h1 class="title3">How it works</h1>
+            <p class="description2">The respectful treatment of the unique nature of the north and the sustainable experience of this <br> are the main interest of our guests.
+            </p> 
+        </div>
+        <div class="image_container">
+            <img src="../images/pic1.png" class="image">
+            <img src="../images/pic2.png" class="image">
+            <img src="../images/pic3.png" class="image">
+        </div>
+    </section>
+    <section class="DestinationSection" id="destination">
+        <div class="destination_container">
+            <h1 class="title2">Destinations</h1>
+            <table style="font-weight: 200;">
+                <tr>
+                  <th>Country</th>
+                  <th>Tour</th>
+                  <th>Duration</th>
+                  <th>Type</th>
+                  <th>Means of Transport</th>
+                  <th :empty ></th> <!-- how to put empty space here? -->
+                </tr>
+                <tr>
+                  <td>Sweden</td>
+                  <td>Roslagsleden</td>
+                  <td>7-10 days</td>
+                  <td>Hiking</td>
+                  <td>Night train / bus </td>
+                  <td><ins>Book now</ins></td>
+                </tr>
+                <tr>
+                    <td>Sweden</td>
+                    <td>&nbsp;Glaskogen Nature Reserve&nbsp;</td>
+                    <td>9-16 days</td>
+                    <td>Canoe / Camping</td>
+                    <td>Night train / bus </td>
+                    <td><ins>Book now</ins></td>
+                </tr>
+                <tr>
+                    <td>Sweden</td>
+                    <td>Västra Götaland</td>
+                    <td>7-10 days</td>
+                    <td>&nbsp;Hiking / bird watching&nbsp;</td>
+                    <td>Night train / bus </td>
+                    <td><ins>Book now</ins></td>
+                  </tr>
+                <tr>
+                    <td>Sweden</td>
+                    <td>Husky Track Norrbotten</td>
+                    <td>10 days</td>
+                    <td>Dog Sled Tour</td>
+                    <td>&nbsp;Night train / bus &nbsp;</td>
+                    <td><ins>Book now</ins></td>
+                </tr>
+              </table>        
+        </div>
+    </section>
+    <section class="BookingSection" id="book">
+      <div class="booking_container_txt">
+        <h1 class="title3">Booking request</h1>
+        <p class="description3"> Please fill in the form below, tell us your travel wishes and where you know us from.
+        </p> 
+      </div>
+        <div class="booking_form_container">
+            <form class="form">
+                <input placeholder="First Name*" class="contact-input">
+                <input placeholder="Last Name*" class="contact-input">
+                <input placeholder="E-mail*" class="contact-input">
+              </form>
+      
+            <div class="div_select">
+                <label for="select_menue">Select tour:</label>
+                    <select name="tours" id="tours" style="width:300px">
+                    <option value="Glaskogen">SE - Glaskogen</option>
+                    <option value="Roslagen">SE - Roslagsleden</option>
+                    <option value="Götaland">SE - Västra Götaland</option>
+                    <option value="Kumanokodo">SE - Dog Sled Tour</option>
+                    </select>
+            </div>
+            <div class="div_radio">
+                <label style="font-weight: bolder" for="checkbox">Number of travelers:</label>
+                <input type="radio" id="one" name="adult_travelers" value="1">
+                <label for="one">1</label><br>
+                <input type="radio" id="two" name="adult_travelers" value="2">
+                <label for="two">2</label><br>
+                <input type="radio" id="three" name="adult_travelers" value="3">
+                <label for="three">3</label>
+                <input type="radio" id="four" name="adult_travelers" value="4">
+                <label for="four">4</label>
+                <input type="radio" id="five" name="adult_travelers" value="5">
+                <label for="five">more</label>
+            </div>
+        
+            <div class="div_radio">
+              <label style="font-weight: bolder" for="checkbox">Subscribe to our newsletter:</label>
+              <input type="radio" id="one" name="adult_travelers" value="1">
+              <label for="one">Yes</label><br>
+              <input type="radio" id="two" name="adult_travelers" value="2">
+              <label for="two">No</label><br>
+            </div>
+
+            <div class="div_checkbox">
+              <label style="font-weight: bolder" for="checkbox">Where do you know us from?</label>
+              
+              <label class="container">Word of mouth
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+
+              <label class="container">Magazine
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="container">Online Marketing
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Word of mouth
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+
+              <label class="container">Magazine
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="container">Online Marketing
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+          </div>
+
+          <div class="button1Container">
+            <button class="open-button" onclick="openForm()">Submit</button>
+            <p class="TAC" >By submitting you agree to our&nbsp;<a href="#tac" style="color:dodgerblue">Terms & Conditions</a>.</p>
+
+        </div>
+
+
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1 class="title2">📫 Thank you, your request has been received.<br> Please check your inbox for our confirmation mail.</h1>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      
+        <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+          </script>
+
+    </section>
+    <section class="TAC_Section" id="tac">
+      <div class="tac_container">
+          <h1 class="title2">Terms and Conditions</h1>
+          <ul class="tac_list">
+            <li>Level 1</li>
+            <li style="margin-left: 2.5%; list-style-type: square;">Level 2</li>
+            <dd style="margin-left: 3%; margin-bottom: 0.5%">a. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut <br> labore et dolore magna aliquyam erat, sed diam voluptua.</dd>
+            <dd style="margin-left: 3%">b. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</dd>
+            <li style="font-weight: bolder">At vero eos et accusam et justo duo dolores et ea rebum.</li>
+            <li style="margin-left: 2.5%; font-weight: bolder; list-style-type: square;">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+          </ul>  
+        </div>
+  </section>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="upper-footer">
+          <div class="div_contact">
+          <h2 class="txt">Contact</h2>
+              <p class="description4">info@ecotravel.com</p> 
+              <p class="description4">Erich-Weinert-Straße 145</p> 
+              <p class="description4">10409 Berlin</p>  
+          </div>
+  
+          <div class="div_map">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.3977035319913!2d13.438591516160978!3d52.54433067981881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84f446e0c53a1%3A0x27eac7eee50f967e!2sCode%20Academy%20Berlin!5e0!3m2!1sen!2sde!4v1660725803808!5m2!1sen!2sde" width="400" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="newsletter">
+              <h2 class="txt">Stay up to date with our newsletter</h2>
+              <input placeholder="E-mail" class="inputfield">
+              <button class="subs">Subscribe</button>
+          </div>
+      </div>
+      <div class="down-footer">
+          <li class="copyright">Eco Travel © 2022 | Made by Räuberschnecke 🐌 | Privacy Policy | Imprint</li>
+      </div>
+  
+  </footer>   
+    
+</body>
+</html>
